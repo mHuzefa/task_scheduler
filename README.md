@@ -1,4 +1,5 @@
 # Task Scheduler
+To see System Design, Read this: [System Design of distributed task scheduler](https://github.com/mHuzefa/task_scheduler/blob/main/System%20Design%20of%20distributed%20task%20scheduler.md)
 ## Overview
 The distributed task scheduler is designed to allow clients to register both  one-time and recurring tasks, ensuring their execution within 10 seconds of  the scheduled time. The system aims to be highly available, durable,  scalable, and cost-effective
 
