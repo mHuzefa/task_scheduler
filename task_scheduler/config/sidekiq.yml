@@ -1,0 +1,19 @@
+# config/sidekiq.yml
+
+---
+:verbose: false
+:concurrency: 25
+:queues:
+  - default
+:development:
+  :url: redis://redis:6379/0
+:production:
+  :url: redis://redis:6379/0
+
+:scheduler:
+  :schedule:
+    polling_job:
+      cron: "* * * * *"   
+      class: "SidekiqWorker"
+      queue: "default"
+      description: "Polling Job for scheduling tasks execution"
